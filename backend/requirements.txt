@@ -2,4 +2,4 @@ fastapi
 uvicorn
 pymongo
 dnspython
-pydantic
+pydantic[email]
