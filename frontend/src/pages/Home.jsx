@@ -124,10 +124,10 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-  src="https://images.unsplash.com/photo-1650160500393-4bbfa796a961?auto=format&fit=crop&w=1600&q=80"
-  alt="Well-maintained Community"
-  className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-/>
+            src="https://images.unsplash.com/photo-1650160500393-4bbfa796a961?auto=format&fit=crop&w=1600&q=80"
+            alt="Well-maintained Community"
+            className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-[#2B4C7E]/95 via-[#2B4C7E]/85 to-[#2B4C7E]/70" />
         </div>
 
@@ -166,62 +166,62 @@ export default function Home() {
         </div>
       </section>
 
-{/* ABOUT */}
-<section id="about" className="py-24 bg-gradient-to-b from-white to-slate-50">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B4C7E] mb-6">
-        Who We Are
-      </h2>
-      <div className="w-24 h-1 bg-[#0D9488] mx-auto" />
-    </div>
+      {/* ABOUT */}
+      <section id="about" className="py-24 bg-gradient-to-b from-white to-slate-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B4C7E] mb-6">
+              Who We Are
+            </h2>
+            <div className="w-24 h-1 bg-[#0D9488] mx-auto" />
+          </div>
 
-    <div className="grid md:grid-cols-2 gap-12 items-center">
-      <div className="space-y-6">
-        <p className="text-lg text-slate-700 leading-relaxed">
-          REVIVO is a modern facility management company focused on complete building care.
-          We specialize in managing residential apartments and small to mid-sized communities
-          with professionalism, transparency, and reliability.
-        </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <p className="text-lg text-slate-700 leading-relaxed">
+                REVIVO is a modern facility management company focused on complete building care.
+                We specialize in managing residential apartments and small to mid-sized communities
+                with professionalism, transparency, and reliability.
+              </p>
 
-        <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#0D9488]">
-          <h3 className="text-2xl font-bold text-[#2B4C7E] mb-4">
-            Our Mission
-          </h3>
+              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#0D9488]">
+                <h3 className="text-2xl font-bold text-[#2B4C7E] mb-4">
+                  Our Mission
+                </h3>
 
-          <div className="space-y-3">
-            {["Smooth operations", "Well-maintained infrastructure", "Hassle-free living"].map(
-              (t) => (
-                <div key={t} className="flex items-center gap-3">
-                  <CheckCircle className="text-[#0D9488] w-6 h-6" />
-                  <span className="text-slate-700 font-medium">{t}</span>
+                <div className="space-y-3">
+                  {["Smooth operations", "Well-maintained infrastructure", "Hassle-free living"].map(
+                    (t) => (
+                      <div key={t} className="flex items-center gap-3">
+                        <CheckCircle className="text-[#0D9488] w-6 h-6" />
+                        <span className="text-slate-700 font-medium">{t}</span>
+                      </div>
+                    )
+                  )}
                 </div>
-              )
-            )}
+              </div>
+
+              <p className="text-lg text-slate-700 font-semibold">
+                We ensure your property runs efficiently every single day.
+              </p>
+            </div>
+
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1650160500393-4bbfa796a961?auto=format&fit=crop&w=1600&q=80"
+                alt="Well-maintained Community"
+                className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+              />
+
+              <div className="absolute -bottom-6 -right-6 bg-[#0D9488] text-white p-8 rounded-2xl shadow-xl">
+                <Building2 className="w-12 h-12 mb-2" />
+                <p className="font-bold text-2xl">Professional</p>
+                <p className="text-sm">Management</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <p className="text-lg text-slate-700 font-semibold">
-          We ensure your property runs efficiently every single day.
-        </p>
-      </div>
-
-      <div className="relative">
-        <img
-          src="https://images.unsplash.com/photo-1650160500393-4bbfa796a961?auto=format&fit=crop&w=1600&q=80"
-          alt="Well-maintained Community"
-          className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-        />
-
-        <div className="absolute -bottom-6 -right-6 bg-[#0D9488] text-white p-8 rounded-2xl shadow-xl">
-          <Building2 className="w-12 h-12 mb-2" />
-          <p className="font-bold text-2xl">Professional</p>
-          <p className="text-sm">Management</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* SERVICES */}
       <section id="services" className="py-24 bg-white">
