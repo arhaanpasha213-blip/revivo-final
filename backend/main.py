@@ -11,14 +11,25 @@ app = FastAPI()
 # Allow React (localhost:3000) to call the API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://*.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+import os
+from pymongo import MongoClient
+
+MONGO_URI = os.getenv("MONGO_URI")
+if not MONGO_URI:
+    raise RuntimeError("MONGO_URI is not set")
+
+client = MongoClient(MONGO_URI)
 db = client["revivo_db"]
 contact_collection = db["contact_requests"]
 
