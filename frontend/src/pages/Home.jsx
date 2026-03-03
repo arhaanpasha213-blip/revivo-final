@@ -14,9 +14,9 @@ import {
   Users,
 } from "lucide-react";
 import axios from "axios";
-import logo from "../assets/logo.png";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_cfd1e19c-d843-46fd-9141-362b64e3e2e6/artifacts/9b7x6m6b_155DCB86-83D0-44ED-ACB1-4CCDA4468E58.png";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -93,7 +93,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="REVIVO Logo" className="h-16 w-auto" />
+            <img src={LOGO_URL} alt="REVIVO Logo" className="h-16 w-auto" />
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -348,7 +348,7 @@ export default function Home() {
               { icon: Shield, title: "Structured Management System", desc: "Organized processes for every aspect of building management" },
               { icon: TrendingUp, title: "Transparent Pricing", desc: "Clear, upfront costs with no hidden surprises" },
               { icon: Zap, title: "Quick Issue Resolution", desc: "Fast response times to keep your building running smoothly" },
-              { icon: Users, title: "Dedicated Oversight", desc: "Committed team focused on your property’s needs" },
+              { icon: Users, title: "Dedicated Oversight", desc: "Committed team focused on your property's needs" },
               { icon: Clock, title: "Preventive Maintenance", desc: "Proactive approach to avoid costly repairs" },
               { icon: TrendingUp, title: "Long-Term Property Value", desc: "Strategies to preserve and enhance your investment" },
             ].map((item, idx) => (
@@ -510,15 +510,23 @@ export default function Home() {
 
             <div className="mt-10 pt-10 border-t border-slate-200">
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#0D9488]/10 rounded-full flex items-center justify-center">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#0D9488]/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-[#0D9488]" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-600 font-semibold">Phone</p>
-                    <a href="tel:6362533067" className="text-[#2B4C7E] font-bold hover:text-[#0D9488]">
-                      6362533067
-                    </a>
+                    <p className="text-sm text-slate-600 font-semibold mb-2">Phone</p>
+                    <div className="space-y-1">
+                      <a href="tel:6362533067" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
+                        6362533067
+                      </a>
+                      <a href="tel:7411703129" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
+                        7411703129
+                      </a>
+                      <a href="tel:9902557925" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
+                        9902557925
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -528,8 +536,8 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-600 font-semibold">Email</p>
-                    <a href="mailto:revivoFM@gmail.com" className="text-[#2B4C7E] font-bold hover:text-[#0D9488]">
-                      revivoFM@gmail.com
+                    <a href="mailto:info@revivo.co.in" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] text-sm">
+                      info@revivo.co.in
                     </a>
                   </div>
                 </div>
@@ -553,12 +561,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER (full, like original) */}
+      {/* FOOTER */}
       <footer className="bg-[#2B4C7E] text-white py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img src={logo} alt="REVIVO Logo" className="h-24 w-auto mb-4" />
+              <img src={LOGO_URL} alt="REVIVO Logo" className="h-24 w-auto mb-4" />
               <p className="text-gray-300 mb-3">Complete Facility Management Services</p>
               <div className="flex items-start gap-2 text-gray-300 text-sm">
                 <MapPin className="w-4 h-4 text-[#0D9488] mt-1 flex-shrink-0" />
@@ -585,16 +593,24 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-lg mb-4">Contact Info</h4>
               <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-[#0D9488]" />
-                  <a href="tel:6362533067" className="text-gray-300 hover:text-[#0D9488]">
-                    6362533067
-                  </a>
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-[#0D9488] flex-shrink-0 mt-1" />
+                  <div className="space-y-1">
+                    <a href="tel:6362533067" className="text-gray-300 hover:text-[#0D9488] block text-sm">
+                      6362533067
+                    </a>
+                    <a href="tel:7411703129" className="text-gray-300 hover:text-[#0D9488] block text-sm">
+                      7411703129
+                    </a>
+                    <a href="tel:9902557925" className="text-gray-300 hover:text-[#0D9488] block text-sm">
+                      9902557925
+                    </a>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-[#0D9488]" />
-                  <a href="mailto:revivoFM@gmail.com" className="text-gray-300 hover:text-[#0D9488]">
-                    revivoFM@gmail.com
+                  <a href="mailto:info@revivo.co.in" className="text-gray-300 hover:text-[#0D9488] text-sm">
+                    info@revivo.co.in
                   </a>
                 </div>
               </div>
