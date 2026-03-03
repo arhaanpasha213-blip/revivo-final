@@ -9,13 +9,18 @@ import uuid
 app = FastAPI()
 
 # Allow React (localhost:3000) to call the API
+from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://revivo-final.vercel.app",
         "http://localhost:3000",
         "http://localhost:5173",
+        "https://revivo.co.in",
+        "https://www.revivo.co.in",
+        "https://revivo-final.vercel.app"
     ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
