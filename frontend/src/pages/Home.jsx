@@ -596,15 +596,17 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-[#0D9488] flex-shrink-0 mt-1" />
                   <div className="space-y-1">
-                    <a href="tel:6362533067" className="text-gray-300 hover:text-[#0D9488] block text-sm">
-                      6362533067
-                    </a>
-                    <a href="tel:7411703129" className="text-gray-300 hover:text-[#0D9488] block text-sm">
-                      7411703129
-                    </a>
-                    <a href="tel:9902557925" className="text-gray-300 hover:text-[#0D9488] block text-sm">
-                      9902557925
-                    </a>
+                   <a href="tel:+916362533067" className="text-gray-300 hover:text-[#0D9488] block text-sm">
+  +91 6362533067
+</a>
+
+<a href="tel:+917411703129" className="text-gray-300 hover:text-[#0D9488] block text-sm">
+  +91 7411703129
+</a>
+
+<a href="tel:+919902557925" className="text-gray-300 hover:text-[#0D9488] block text-sm">
+  +91 9902557925
+</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
