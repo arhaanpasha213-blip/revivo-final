@@ -137,8 +137,7 @@ export default function Home() {
             <span className="text-[#0D9488]">You Relax.</span>
           </h1>
           <p className="text-lg md:text-2xl mb-12 text-gray-100 max-w-3xl mx-auto leading-relaxed">
-            At REVIVO, we take care of your entire building — operations and maintenance —
-            so residents and owners can live stress-free.
+           At REVIVO, we take care of your entire building’s operations and maintenance so residents and owners can live stress-free.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
