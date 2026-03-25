@@ -578,7 +578,7 @@ export default function Home() {
                   <p>18/7, Salaeh Center, Unit 201, 2nd Floor</p>
                   <p>Cunningham Road, Vasanthnagar</p>
                   <p>Bangalore - 560052</p>
-                  <p className="text-[#0D9488] mt-1">Landmark: 3rd Wave Cafe</p>
+                  <p className="text-[#0D9488] mt-1">Landmark: Third Wave Coffee</p>
                 </div>
               </div>
             </div>
