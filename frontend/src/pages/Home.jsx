@@ -290,9 +290,9 @@ export default function Home() {
 
           <div className="p-12 rounded-3xl shadow-2xl border-2 border-[#0D9488]/20 bg-white">
             <div className="text-center mb-8">
-              <div className="text-5xl md:text-6xl font-black text-[#2B4C7E] mb-4">₹2,499 – ₹4,999</div>
-              <p className="text-xl text-slate-600">per flat (monthly)</p>
-            </div>
+  <div className="text-4xl font-bold text-blue-900">Custom Pricing</div>
+  <p className="text-xl text-gray-600 mt-2">Tailored to your building’s requirements</p>
+</div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-slate-50 p-6 rounded-2xl">
