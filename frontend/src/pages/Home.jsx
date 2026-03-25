@@ -281,18 +281,22 @@ export default function Home() {
       {/* PRICING */}
       <section id="pricing" className="py-24 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B4C7E] mb-6">
-              Transparent & Simple Pricing
-            </h2>
-            <div className="w-24 h-1 bg-[#0D9488] mx-auto" />
-          </div>
+    <div className="text-center mb-8">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B4C7E] mb-6">
+        Transparent & Simple Pricing
+      </h2>
+      <div className="w-24 h-1 bg-[#0D9488] mx-auto" />
+    </div>
 
-          <div className="p-12 rounded-3xl shadow-2xl border-2 border-[#0D9488]/20 bg-white">
-            <div className="text-center mb-8">
-  <div className="text-4xl font-bold text-blue-900">Custom Pricing</div>
-  <p className="text-xl text-gray-600 mt-2">Tailored to your building’s requirements</p>
-</div>
+    <div className="p-8 rounded-3xl shadow-2xl border-2 border-[#0D9488]/20 bg-white">
+      <div className="text-center mb-6">
+        <div className="text-5xl font-extrabold text-[#2B4C7E] leading-tight">
+          Custom Pricing
+        </div>
+        <p className="text-lg text-gray-500 mt-3">
+          Tailored to your building’s requirements
+        </p>
+      </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-slate-50 p-6 rounded-2xl">
