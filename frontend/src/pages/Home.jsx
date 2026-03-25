@@ -520,15 +520,17 @@ export default function Home() {
                   <div>
                     <p className="text-sm text-slate-600 font-semibold mb-2">Phone</p>
                     <div className="space-y-1">
-                      <a href="tel:6362533067" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
-                        6362533067
-                      </a>
-                      <a href="tel:7411703129" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
-                        7411703129
-                      </a>
-                      <a href="tel:9902557925" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
-                        9902557925
-                      </a>
+                      <a href="tel:+916362533067" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
+  +91 6362533067
+</a>
+
+<a href="tel:+917411703129" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
+  +91 7411703129
+</a>
+
+<a href="tel:+919902557925" className="text-[#2B4C7E] font-bold hover:text-[#0D9488] block text-sm">
+  +91 9902557925
+</a>
                     </div>
                   </div>
                 </div>
@@ -556,7 +558,7 @@ export default function Home() {
                   <p className="text-slate-700">18/7, Salaeh Center, Unit 201, 2nd Floor</p>
                   <p className="text-slate-700">Cunningham Road, Vasanthnagar</p>
                   <p className="text-slate-700">Bangalore - 560052</p>
-                  <p className="text-[#0D9488] font-semibold mt-2">Landmark: 3rd Wave Cafe</p>
+                  <p className="text-[#0D9488] font-semibold mt-2">Landmark: Third Wave Coffee</p>
                 </div>
               </div>
             </div>
